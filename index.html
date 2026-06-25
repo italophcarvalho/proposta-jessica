@@ -413,7 +413,7 @@
     .trust-bar {
       background: var(--forest);
       color: var(--white);
-      padding: 18px clamp(20px, 5vw, 60px);
+      padding: 16px clamp(20px, 5vw, 60px);
     }
     .trust-bar-inner {
       max-width: 1280px;
@@ -421,23 +421,29 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: clamp(24px, 4vw, 60px);
-      flex-wrap: wrap;
+      gap: clamp(16px, 3vw, 48px);
+      flex-wrap: nowrap;
+      white-space: nowrap;
     }
     .trust-item {
       display: flex;
       align-items: center;
-      gap: 10px;
-      font-size: .85rem;
+      gap: 8px;
+      font-size: clamp(.7rem, 1.1vw, .85rem);
       opacity: .9;
+      flex-shrink: 0;
     }
-    .trust-item svg { opacity: .7; }
+    .trust-item svg { opacity: .7; flex-shrink: 0; }
     .trust-sep {
       width: 1px;
-      height: 20px;
+      height: 18px;
       background: rgba(255,255,255,.25);
+      flex-shrink: 0;
     }
-    @media (max-width: 600px) { .trust-sep { display: none; } }
+    @media (max-width: 600px) {
+      .trust-bar-inner { flex-wrap: wrap; white-space: normal; gap: 12px; }
+      .trust-sep { display: none; }
+    }
 
     /* ─── SECTION GENERIC ─────────────────────────────────────── */
     .section {
