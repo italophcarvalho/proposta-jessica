@@ -290,6 +290,13 @@
       overflow: hidden;
       box-shadow: var(--shadow-lg);
     }
+    .hero-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      display: block;
+    }
     .hero-photo-placeholder {
       position: absolute;
       inset: 0;
@@ -1168,15 +1175,7 @@
 
   <div class="hero-image-wrap reveal" style="transition-delay:.15s">
     <div class="hero-photo" aria-label="Foto de Jéssika Butcovsky">
-      <div class="hero-photo-leaf" aria-hidden="true"></div>
-      <!-- Substitua pelo elemento abaixo com a foto real: <img src="foto-jessika.jpg" alt="Nutricionista Jéssika Butcovsky"> -->
-      <svg style="position:absolute;top:0;left:0;width:100%;height:100%;opacity:.15" viewBox="0 0 400 530" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <circle cx="200" cy="150" r="80" fill="white"/>
-        <ellipse cx="200" cy="370" rx="130" ry="110" fill="white"/>
-      </svg>
-      <div class="hero-photo-placeholder" aria-hidden="true">
-        <p>Jéssika Butcovsky<br>Nutricionista</p>
-      </div>
+      <img src="assets/Jéssika Butcovsky Nutricionista-1.webp" alt="Nutricionista Jéssika Butcovsky" width="800" height="1067">
     </div>
     <div class="hero-badge" aria-label="Avaliação dos pacientes">
       <div class="hero-badge-rating" aria-label="5 estrelas">★★★★★</div>
@@ -1217,12 +1216,7 @@
     <div class="sobre-grid">
       <div class="sobre-image reveal">
         <div class="sobre-photo" aria-label="Foto da nutricionista Jéssika Butcovsky">
-          <!-- <img src="foto-sobre.jpg" alt="Nutricionista Jéssika Butcovsky em atendimento"> -->
-          <svg width="80" height="80" fill="none" viewBox="0 0 80 80" aria-hidden="true">
-            <circle cx="40" cy="30" r="18" fill="#5C9A7A" opacity=".4"/>
-            <ellipse cx="40" cy="68" rx="28" ry="18" fill="#5C9A7A" opacity=".3"/>
-          </svg>
-          <span class="sobre-photo-txt">Foto Jéssika Butcovsky</span>
+          <img src="assets/Jéssika Butcovsky Nutricionista-3.webp" alt="Nutricionista Jéssika Butcovsky" width="600" height="750" style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block;">
         </div>
         <div class="sobre-deco" aria-hidden="true"></div>
       </div>
